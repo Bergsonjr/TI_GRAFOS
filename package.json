@@ -1,0 +1,22 @@
+{
+  "name": "ti_grafos",
+  "version": "1.0.0",
+  "description": "Trabalho integrado de grafos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bergsonjr/TI_GRAFOS.git"
+  },
+  "author": "Bergson Jr, Juan Carlos & Gustavo Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bergsonjr/TI_GRAFOS/issues"
+  },
+  "homepage": "https://github.com/Bergsonjr/TI_GRAFOS#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}

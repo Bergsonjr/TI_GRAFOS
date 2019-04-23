@@ -1,20 +1,27 @@
 //libs node.js
 const fs = require('fs')
 
-//class
+//classes
 const Aluno = require('./class/Aluno.js')
 const Professor = require('./class/Professor.js')
 
-const path = './file/Dados_Alunos_.txt'
+//files
+const pathAluno = './files/Dados_Aluno.txt'
+const pathMatriz = './files/Matriz_Dissimilaridade.txt'
 
 
 function readFile(path) {
-    let result = await fs.readFileSync(path)
-    console.log(result)
+    return fs.readFileSync(path).toString()
 }
 
 async function main() {
-    readFile(path)
+    let arrayAlunos = []
+    let fileContent = await readFile(pathAluno).replace(/\n/g, ';').split(';')
+
+    for (let i = 0; i < fileContent.length; i++) {
+        arrayAlunos.push(new Aluno(parseInt(fileContent[i].substring(0, 2)), parseInt(fileContent[i].substring(3, 5))))
+    }
+    console.log(arrayAlunos)
 }
 
 main()

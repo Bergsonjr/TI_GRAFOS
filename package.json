@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Trabalho integrado de grafos",
   "main": "index.js",
+  "directories": {
+    "test": "mocha"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +20,8 @@
   },
   "homepage": "https://github.com/Bergsonjr/TI_GRAFOS#readme",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "assert": "^1.4.1",
+    "fs": "0.0.1-security",
+    "mocha": "^6.1.4"
   }
 }

@@ -13,7 +13,7 @@ const pathAlunoTest = './files/Dados_Aluno_Test.txt'
 const pathMatrizTest = './files/Matriz_Dissimilaridade_Test.txt'
 
 //Tests
-describe('Testes do TI de Grafos', async function () {
+describe('Testes do Trabalho Integrado de Grafos', async function () {
 
     it('Leitura do arquivo de Alunos', async () => {
         let condition = true

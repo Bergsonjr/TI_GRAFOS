@@ -4,6 +4,7 @@ const fs = require('fs')
 //classes
 const Aluno = require('./class/Aluno.js')
 const Professor = require('./class/Professor.js')
+const Grupo = require('./class/Grupo.js')
 
 //files
 const pathAluno = './files/Dados_Aluno.txt'
@@ -23,7 +24,7 @@ async function main() {
     }
     //converte conteúdo do arquivo para uma matriz
     let matrizDissimilaridade = matrizContent.split('\n').map((e) => { return e.split(' ') })
-    console.log(matrizDissimilaridade[0, 0][1])
+    console.log(matrizDissimilaridade[0, 0])
 
 }
 
